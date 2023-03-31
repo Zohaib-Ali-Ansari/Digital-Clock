@@ -20,6 +20,10 @@ function clock() {
         h = h - 12;
     }
 
+    if (h == 00) {
+        h = 12;
+    }
+
     if (h < 10) {
         h = "0" + h;
     }
